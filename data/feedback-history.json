@@ -1,0 +1,29 @@
+[
+  {
+    "feedbackId": "fb-2001",
+    "userId": "demo_user",
+    "issueTitle": "Move pricing calculation into service layer",
+    "action": "helpful",
+    "category": "architecture",
+    "timestamp": "2026-04-10T11:00:00Z",
+    "notes": "The team adopted this and extracted a pricing service."
+  },
+  {
+    "feedbackId": "fb-2002",
+    "userId": "demo_user",
+    "issueTitle": "Rename variables generically",
+    "action": "not_helpful",
+    "category": "naming",
+    "timestamp": "2026-04-13T13:00:00Z",
+    "notes": "Feedback was too vague and lacked project context."
+  },
+  {
+    "feedbackId": "fb-2003",
+    "userId": "demo_user",
+    "issueTitle": "Extract shared validation helper",
+    "action": "accept_fix_pattern",
+    "category": "maintainability",
+    "timestamp": "2026-04-15T09:40:00Z",
+    "notes": "Reusable validation helper pattern is now encouraged."
+  }
+]

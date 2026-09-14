@@ -1,0 +1,24 @@
+[
+  {
+    "userId": "demo_user",
+    "name": "Priya",
+    "level": "intermediate",
+    "primaryLanguage": "python",
+    "preferredFeedbackStyle": "practical",
+    "team": "backend-platform",
+    "focusAreas": ["api", "validation", "architecture"],
+    "strengths": ["readability", "api ergonomics"],
+    "weakAreas": ["logging", "error handling", "route layering"]
+  },
+  {
+    "userId": "new_grad_backend",
+    "name": "Rohan",
+    "level": "beginner",
+    "primaryLanguage": "python",
+    "preferredFeedbackStyle": "teaching",
+    "team": "payments",
+    "focusAreas": ["validation", "exceptions"],
+    "strengths": ["tests"],
+    "weakAreas": ["architecture", "naming"]
+  }
+]

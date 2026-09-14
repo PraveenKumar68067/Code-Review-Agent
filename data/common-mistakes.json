@@ -1,0 +1,62 @@
+[
+  {
+    "id": "mistake-heavy-route",
+    "kind": "common_mistake",
+    "title": "Business logic inside route handlers",
+    "content": "Recent reviews repeatedly flagged route handlers that calculate totals, branch on business rules, and call repositories directly instead of delegating to services.",
+    "language": "python",
+    "category": "architecture",
+    "keywords": ["route", "business logic", "service", "handler"],
+    "confidence": 0.92,
+    "source": "review-history",
+    "timesUsed": 8,
+    "metadata": {
+      "repeatCount": 5
+    }
+  },
+  {
+    "id": "mistake-weak-validation",
+    "kind": "common_mistake",
+    "title": "Weak request validation",
+    "content": "Inputs are often used directly from payload dictionaries without checking required fields, value ranges, or allowed states.",
+    "language": "python",
+    "category": "validation",
+    "keywords": ["validation", "payload", "input", "request"],
+    "confidence": 0.95,
+    "source": "review-history",
+    "timesUsed": 15,
+    "metadata": {
+      "repeatCount": 9
+    }
+  },
+  {
+    "id": "mistake-no-error-guard",
+    "kind": "common_mistake",
+    "title": "Missing exception handling around external operations",
+    "content": "Database and network calls repeatedly lack try/except handling and contextual failure logging.",
+    "language": "python",
+    "category": "reliability",
+    "keywords": ["try", "except", "database", "client", "failure"],
+    "confidence": 0.93,
+    "source": "review-history",
+    "timesUsed": 11,
+    "metadata": {
+      "repeatCount": 7
+    }
+  },
+  {
+    "id": "mistake-duplicate-logic",
+    "kind": "common_mistake",
+    "title": "Repeated duplicate business logic",
+    "content": "Validation and discount calculations are often copied across multiple handlers instead of extracted into shared helpers.",
+    "language": "python",
+    "category": "maintainability",
+    "keywords": ["duplicate", "helper", "shared", "logic"],
+    "confidence": 0.9,
+    "source": "review-history",
+    "timesUsed": 10,
+    "metadata": {
+      "repeatCount": 6
+    }
+  }
+]

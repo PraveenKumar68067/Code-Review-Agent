@@ -1,0 +1,272 @@
+[
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776472859485",
+    "userId": "demo_user",
+    "habitType": "validation",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for validation.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776472859485",
+    "userId": "demo_user",
+    "habitType": "error_handling",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for error_handling.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776472859485",
+    "userId": "demo_user",
+    "habitType": "architecture",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for architecture.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776472859485",
+    "userId": "demo_user",
+    "habitType": "logging",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for logging.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776472859485",
+    "userId": "demo_user",
+    "habitType": "maintainability",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for maintainability.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776473585389",
+    "userId": "demo_user",
+    "habitType": "validation",
+    "trend": "watch",
+    "evidence": "Recent review generated 1 issue(s) for validation.",
+    "score": 70
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776473585389",
+    "userId": "demo_user",
+    "habitType": "error_handling",
+    "trend": "watch",
+    "evidence": "Recent review generated 1 issue(s) for error_handling.",
+    "score": 70
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776473585389",
+    "userId": "demo_user",
+    "habitType": "architecture",
+    "trend": "watch",
+    "evidence": "Recent review generated 1 issue(s) for architecture.",
+    "score": 70
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776473585389",
+    "userId": "demo_user",
+    "habitType": "logging",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for logging.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776473585389",
+    "userId": "demo_user",
+    "habitType": "maintainability",
+    "trend": "watch",
+    "evidence": "Recent review generated 1 issue(s) for maintainability.",
+    "score": 70
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-history-shape",
+    "userId": "demo_user",
+    "habitType": "validation",
+    "trend": "watch",
+    "evidence": "Recent review generated 1 issue(s) for validation.",
+    "score": 70
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-history-shape",
+    "userId": "demo_user",
+    "habitType": "error_handling",
+    "trend": "watch",
+    "evidence": "Recent review generated 1 issue(s) for error_handling.",
+    "score": 70
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-history-shape",
+    "userId": "demo_user",
+    "habitType": "architecture",
+    "trend": "watch",
+    "evidence": "Recent review generated 1 issue(s) for architecture.",
+    "score": 70
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-history-shape",
+    "userId": "demo_user",
+    "habitType": "logging",
+    "trend": "watch",
+    "evidence": "Recent review generated 1 issue(s) for logging.",
+    "score": 70
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-history-shape",
+    "userId": "demo_user",
+    "habitType": "maintainability",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for maintainability.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-default",
+    "userId": "demo_user",
+    "habitType": "validation",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for validation.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-default",
+    "userId": "demo_user",
+    "habitType": "error_handling",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for error_handling.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-default",
+    "userId": "demo_user",
+    "habitType": "architecture",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for architecture.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-default",
+    "userId": "demo_user",
+    "habitType": "logging",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for logging.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-default",
+    "userId": "demo_user",
+    "habitType": "maintainability",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for maintainability.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776474534302",
+    "userId": "demo_user",
+    "habitType": "validation",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for validation.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776474534302",
+    "userId": "demo_user",
+    "habitType": "error_handling",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for error_handling.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776474534302",
+    "userId": "demo_user",
+    "habitType": "architecture",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for architecture.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776474534302",
+    "userId": "demo_user",
+    "habitType": "logging",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for logging.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776474534302",
+    "userId": "demo_user",
+    "habitType": "maintainability",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for maintainability.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776480510605",
+    "userId": "demo_user",
+    "habitType": "validation",
+    "trend": "watch",
+    "evidence": "Recent review generated 1 issue(s) for validation.",
+    "score": 70
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776480510605",
+    "userId": "demo_user",
+    "habitType": "error_handling",
+    "trend": "watch",
+    "evidence": "Recent review generated 1 issue(s) for error_handling.",
+    "score": 70
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776480510605",
+    "userId": "demo_user",
+    "habitType": "architecture",
+    "trend": "watch",
+    "evidence": "Recent review generated 1 issue(s) for architecture.",
+    "score": 70
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776480510605",
+    "userId": "demo_user",
+    "habitType": "logging",
+    "trend": "improving",
+    "evidence": "Recent review generated 0 issue(s) for logging.",
+    "score": 80
+  },
+  {
+    "scope": "workspace",
+    "workspaceId": "workspace-1776480510605",
+    "userId": "demo_user",
+    "habitType": "maintainability",
+    "trend": "watch",
+    "evidence": "Recent review generated 1 issue(s) for maintainability.",
+    "score": 70
+  }
+]

@@ -1,0 +1,2719 @@
+[
+  {
+    "reviewId": "rev-1001",
+    "userId": "demo_user",
+    "timestamp": "2026-04-10T10:00:00Z",
+    "language": "python",
+    "summary": "Route handler mixed validation, repository access, and pricing rules.",
+    "issues": [
+      {
+        "title": "Move pricing calculation into service layer",
+        "category": "architecture",
+        "severity": "high",
+        "status": "accepted",
+        "keywords": [
+          "route",
+          "service",
+          "business logic"
+        ]
+      },
+      {
+        "title": "Validate request body before repository call",
+        "category": "validation",
+        "severity": "medium",
+        "status": "accepted",
+        "keywords": [
+          "validation",
+          "payload",
+          "database"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 59,
+      "maintainability": 57,
+      "architecture": 48,
+      "reliability": 61,
+      "readability": 68,
+      "teamAlignment": 50
+    }
+  },
+  {
+    "reviewId": "rev-1002",
+    "userId": "demo_user",
+    "timestamp": "2026-04-13T12:30:00Z",
+    "language": "python",
+    "summary": "Validation improved, but logging and exception handling remained weak.",
+    "issues": [
+      {
+        "title": "Add structured logging in error path",
+        "category": "logging",
+        "severity": "medium",
+        "status": "accepted",
+        "keywords": [
+          "logging",
+          "exception"
+        ]
+      },
+      {
+        "title": "Wrap DB call with try/except",
+        "category": "reliability",
+        "severity": "high",
+        "status": "accepted",
+        "keywords": [
+          "database",
+          "try",
+          "except"
+        ]
+      },
+      {
+        "title": "Rename variables generically",
+        "category": "naming",
+        "severity": "low",
+        "status": "rejected",
+        "keywords": [
+          "naming",
+          "generic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 65,
+      "maintainability": 62,
+      "architecture": 58,
+      "reliability": 63,
+      "readability": 71,
+      "teamAlignment": 60
+    }
+  },
+  {
+    "reviewId": "rev-1003",
+    "userId": "demo_user",
+    "timestamp": "2026-04-15T09:15:00Z",
+    "language": "python",
+    "summary": "Naming clarity improved, but duplicate logic resurfaced.",
+    "issues": [
+      {
+        "title": "Extract shared validation helper",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "accepted",
+        "keywords": [
+          "helper",
+          "duplicate",
+          "validation"
+        ]
+      },
+      {
+        "title": "Thin down route orchestration",
+        "category": "architecture",
+        "severity": "medium",
+        "status": "accepted",
+        "keywords": [
+          "route",
+          "service"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 70,
+      "maintainability": 69,
+      "architecture": 64,
+      "reliability": 68,
+      "readability": 76,
+      "teamAlignment": 67
+    }
+  },
+  {
+    "reviewId": "review-e4rlmmnr",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T20:32:27.309Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-6qst4h9b",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T20:47:59.356Z",
+    "language": "python",
+    "summary": "Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 87,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 76,
+      "readability": 90,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-ar55ddme",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T20:48:05.788Z",
+    "language": "python",
+    "summary": "Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 87,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 76,
+      "readability": 90,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-8yony3ng",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T20:48:47.243Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-t0s0nloe",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T20:49:33.114Z",
+    "language": "python",
+    "summary": "Clarify naming where intent is hidden",
+    "issues": [
+      {
+        "title": "Clarify naming where intent is hidden",
+        "category": "naming",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "naming"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 89,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 86,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-s409456w",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T20:50:46.539Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-jcftzk52",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:02:06.930Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-hotoyrfx",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:02:43.192Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-r2ahh841",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:03:01.013Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-1dm009qo",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:09:35.670Z",
+    "language": "python",
+    "summary": "Protect external operations with error handling; Add structured logging around important operations; Split long function `create_user` into smaller steps",
+    "issues": [
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Add structured logging around important operations",
+        "category": "logging",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Use structured logging on failures"
+        ]
+      },
+      {
+        "title": "Split long function `create_user` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 84,
+      "maintainability": 82,
+      "architecture": 90,
+      "reliability": 76,
+      "readability": 90,
+      "teamAlignment": 82
+    }
+  },
+  {
+    "reviewId": "review-dyl4m69z",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:23:21.282Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-i5p2n3xi",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:25:09.165Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-zzpwt7ex",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:25:28.530Z",
+    "language": "python",
+    "summary": "Extract duplicated logic into a helper",
+    "issues": [
+      {
+        "title": "Extract duplicated logic into a helper",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 88,
+      "maintainability": 82,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 90,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-oi1w0tbw",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:34:15.645Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-tg2eej5h",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:34:32.921Z",
+    "language": "python",
+    "summary": "Validate inputs before persistence work; Protect external operations with error handling; Add structured logging around important operations",
+    "issues": [
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Add structured logging around important operations",
+        "category": "logging",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Use structured logging on failures"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 83,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 82
+    }
+  },
+  {
+    "reviewId": "review-nbj2o9nz",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:34:53.418Z",
+    "language": "python",
+    "summary": "Validate inputs before persistence work; Protect external operations with error handling; Add structured logging around important operations",
+    "issues": [
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Add structured logging around important operations",
+        "category": "logging",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Use structured logging on failures"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 83,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 82
+    }
+  },
+  {
+    "reviewId": "review-av1keo2q",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:35:31.154Z",
+    "language": "python",
+    "summary": "Validate inputs before persistence work; Protect external operations with error handling; Add structured logging around important operations",
+    "issues": [
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Add structured logging around important operations",
+        "category": "logging",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Use structured logging on failures"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 83,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 82
+    }
+  },
+  {
+    "reviewId": "review-oiyygnhz",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:36:01.068Z",
+    "language": "python",
+    "summary": "Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 87,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 76,
+      "readability": 90,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-1bvk2dem",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:36:09.853Z",
+    "language": "python",
+    "summary": "Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 87,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 76,
+      "readability": 90,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-nhzx21db",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:36:20.845Z",
+    "language": "python",
+    "summary": "Protect external operations with error handling; Add structured logging around important operations; Split long function `create_user` into smaller steps",
+    "issues": [
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Add structured logging around important operations",
+        "category": "logging",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Use structured logging on failures"
+        ]
+      },
+      {
+        "title": "Split long function `create_user` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 84,
+      "maintainability": 82,
+      "architecture": 90,
+      "reliability": 76,
+      "readability": 90,
+      "teamAlignment": 82
+    }
+  },
+  {
+    "reviewId": "review-xx49gwex",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:40:17.712Z",
+    "language": "python",
+    "summary": "Protect external operations with error handling; Add structured logging around important operations; Split long function `create_user` into smaller steps",
+    "issues": [
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "reliability"
+        ]
+      },
+      {
+        "title": "Add structured logging around important operations",
+        "category": "logging",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "logging"
+        ]
+      },
+      {
+        "title": "Split long function `create_user` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "maintainability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 84,
+      "maintainability": 82,
+      "architecture": 90,
+      "reliability": 76,
+      "readability": 90,
+      "teamAlignment": 82
+    }
+  },
+  {
+    "reviewId": "review-smi7dczq",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:42:25.540Z",
+    "language": "python",
+    "summary": "Clarify naming where intent is hidden",
+    "issues": [
+      {
+        "title": "Clarify naming where intent is hidden",
+        "category": "naming",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "naming"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 89,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 86,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-l5o1f68l",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:43:17.464Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-87pr3v3c",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:50:39.532Z",
+    "language": "python",
+    "summary": "Validate inputs before persistence work; Protect external operations with error handling; Add structured logging around important operations",
+    "issues": [
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Add structured logging around important operations",
+        "category": "logging",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Use structured logging on failures"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 83,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 82
+    }
+  },
+  {
+    "reviewId": "review-mvd62h5v",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:58:57.046Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-ra90g485",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:59:39.025Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-vq0bkxhf",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:59:49.726Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 89,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 86,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-cbcqigxl",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T21:59:56.164Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 89,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 86,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-5jks7cns",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:00:04.624Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 89,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 86,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-xmbzjzaw",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:00:10.767Z",
+    "language": "python",
+    "summary": "Extract duplicated logic into a helper",
+    "issues": [
+      {
+        "title": "Extract duplicated logic into a helper",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 88,
+      "maintainability": 82,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 90,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-k8qimsrk",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:00:42.777Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 89,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 86,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-byuvfc7n",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:10:34.676Z",
+    "language": "python",
+    "summary": "Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 87,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 76,
+      "readability": 90,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-wf0cl8ps",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:12:39.124Z",
+    "language": "python",
+    "summary": "Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 87,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 76,
+      "readability": 90,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-de9mtdlc",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:15:06.451Z",
+    "language": "python",
+    "summary": "Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 87,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 76,
+      "readability": 90,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-f614chu4",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:23:54.158Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-g885z4oj",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:28:40.878Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-lmv9rfun",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:29:20.822Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-b0tuc0v0",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:31:54.556Z",
+    "language": "python",
+    "summary": "Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "reliability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 84,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-syqz8wf3",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:32:34.305Z",
+    "language": "python",
+    "summary": "Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 84,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-vrdkggov",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:33:32.080Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 89,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 86,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-a01jqvki",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:34:10.805Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 89,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 86,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-nimsx0bp",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:34:20.630Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 89,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 86,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-u1f4nees",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:34:51.326Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 89,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 86,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-kmglvgti",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:35:10.222Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-t7t2qxfb",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:35:21.930Z",
+    "language": "python",
+    "summary": "Protect external operations with error handling; Add structured logging around important operations; Split long function `create_user` into smaller steps",
+    "issues": [
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Add structured logging around important operations",
+        "category": "logging",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Use structured logging on failures"
+        ]
+      },
+      {
+        "title": "Split long function `create_user` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Accepted fix pattern: Extract shared validation helper"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 84,
+      "maintainability": 82,
+      "architecture": 90,
+      "reliability": 76,
+      "readability": 90,
+      "teamAlignment": 82
+    }
+  },
+  {
+    "reviewId": "review-z96emp4y",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:36:29.223Z",
+    "language": "python",
+    "summary": "Protect external operations with error handling; Add structured logging around important operations; Split long function `create_user` into smaller steps",
+    "issues": [
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Add structured logging around important operations",
+        "category": "logging",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Use structured logging on failures"
+        ]
+      },
+      {
+        "title": "Split long function `create_user` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Accepted fix pattern: Extract shared validation helper"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 84,
+      "maintainability": 82,
+      "architecture": 90,
+      "reliability": 76,
+      "readability": 90,
+      "teamAlignment": 82
+    }
+  },
+  {
+    "reviewId": "review-1gyfermz",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:36:51.169Z",
+    "language": "python",
+    "summary": "Clarify naming where intent is hidden",
+    "issues": [
+      {
+        "title": "Clarify naming where intent is hidden",
+        "category": "naming",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "naming"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 89,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 86,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-af24p4i3",
+    "userId": "demo_user",
+    "timestamp": "2026-04-17T22:37:00.746Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-hngcxoms",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T00:14:16.246Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Business logic inside route handlers",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations",
+          "Weak request validation"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Missing exception handling around external operations"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Repeated duplicate business logic"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 79,
+      "maintainability": 82,
+      "architecture": 76,
+      "reliability": 62,
+      "readability": 90,
+      "teamAlignment": 87
+    }
+  },
+  {
+    "reviewId": "review-ytxynp8k",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T00:17:33.133Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 89,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 86,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-acxxk9hh",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T00:19:40.545Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 89,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 86,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-6255evs6",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T00:23:49.786Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 89,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 86,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-65cot9zy",
+    "scope": "workspace",
+    "workspaceId": "workspace-1776472859485",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T00:41:23.240Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 89,
+      "maintainability": 90,
+      "architecture": 90,
+      "reliability": 90,
+      "readability": 86,
+      "teamAlignment": 90
+    }
+  },
+  {
+    "reviewId": "review-9iuha6rf",
+    "scope": "workspace",
+    "workspaceId": "workspace-1776473585389",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T00:53:21.546Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 100,
+      "maintainability": 100,
+      "architectureAlignment": 100,
+      "reliability": 100,
+      "readability": 100,
+      "teamAlignment": 100
+    }
+  },
+  {
+    "reviewId": "review-6f37xv3v",
+    "scope": "workspace",
+    "workspaceId": "workspace-1776473585389",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T00:53:29.012Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Separate controller, service, and repository responsibilities",
+          "Hindsight memory"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "reliability"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "maintainability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 72,
+      "maintainability": 80,
+      "architectureAlignment": 66,
+      "reliability": 58,
+      "readability": 100,
+      "teamAlignment": 65
+    }
+  },
+  {
+    "reviewId": "review-v4w32le4",
+    "scope": "workspace",
+    "workspaceId": "workspace-default",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T00:54:06.825Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 100,
+      "maintainability": 100,
+      "architectureAlignment": 100,
+      "reliability": 100,
+      "readability": 100,
+      "teamAlignment": 100
+    }
+  },
+  {
+    "reviewId": "review-4x3q5osz",
+    "scope": "workspace",
+    "workspaceId": "workspace-default",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T00:54:33.958Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 100,
+      "maintainability": 100,
+      "architectureAlignment": 100,
+      "reliability": 100,
+      "readability": 100,
+      "teamAlignment": 100
+    }
+  },
+  {
+    "reviewId": "review-2ocszns9",
+    "scope": "workspace",
+    "workspaceId": "workspace-history-shape",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T01:04:06.475Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issueCount": 4,
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "reliability"
+        ]
+      },
+      {
+        "title": "Add structured logging around important operations",
+        "category": "logging",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Use structured logging on failures"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 71,
+      "maintainability": 92,
+      "architectureAlignment": 66,
+      "reliability": 50,
+      "readability": 100,
+      "teamAlignment": 59
+    }
+  },
+  {
+    "reviewId": "review-i6pj41ix",
+    "scope": "workspace",
+    "workspaceId": "workspace-history-shape",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T01:05:28.278Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issueCount": 4,
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Separate controller, service, and repository responsibilities"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "reliability"
+        ]
+      },
+      {
+        "title": "Add structured logging around important operations",
+        "category": "logging",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "Use structured logging on failures"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 71,
+      "maintainability": 92,
+      "architectureAlignment": 66,
+      "reliability": 50,
+      "readability": 100,
+      "teamAlignment": 59
+    }
+  },
+  {
+    "reviewId": "review-o3x5cbnu",
+    "scope": "workspace",
+    "workspaceId": "workspace-default",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T01:06:49.978Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issueCount": 1,
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 100,
+      "maintainability": 100,
+      "architectureAlignment": 100,
+      "reliability": 100,
+      "readability": 100,
+      "teamAlignment": 100
+    }
+  },
+  {
+    "reviewId": "review-jt18uka3",
+    "scope": "workspace",
+    "workspaceId": "workspace-default",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T01:07:18.556Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issueCount": 1,
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 100,
+      "maintainability": 100,
+      "architectureAlignment": 100,
+      "reliability": 100,
+      "readability": 100,
+      "teamAlignment": 100
+    }
+  },
+  {
+    "reviewId": "review-k40rbgkm",
+    "scope": "workspace",
+    "workspaceId": "workspace-1776474534302",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T01:08:57.318Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issueCount": 4,
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Separate controller, service, and repository responsibilities",
+          "Hindsight memory"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "reliability"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "maintainability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 72,
+      "maintainability": 80,
+      "architectureAlignment": 66,
+      "reliability": 58,
+      "readability": 100,
+      "teamAlignment": 65
+    }
+  },
+  {
+    "reviewId": "review-ggrs70yp",
+    "scope": "workspace",
+    "workspaceId": "workspace-1776474534302",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T01:09:16.329Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issueCount": 1,
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 100,
+      "maintainability": 100,
+      "architectureAlignment": 100,
+      "reliability": 100,
+      "readability": 100,
+      "teamAlignment": 100
+    }
+  },
+  {
+    "reviewId": "review-cf8hgn3t",
+    "scope": "workspace",
+    "workspaceId": "workspace-1776474534302",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T01:09:39.919Z",
+    "language": "python",
+    "summary": "No major issues detected by the deterministic review engine",
+    "issueCount": 1,
+    "issues": [
+      {
+        "title": "No major issues detected by the deterministic review engine",
+        "category": "readability",
+        "severity": "low",
+        "status": "open",
+        "keywords": [
+          "readability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 100,
+      "maintainability": 100,
+      "architectureAlignment": 100,
+      "reliability": 100,
+      "readability": 100,
+      "teamAlignment": 100
+    }
+  },
+  {
+    "reviewId": "review-8ekcepnb",
+    "scope": "workspace",
+    "workspaceId": "workspace-1776480510605",
+    "userId": "demo_user",
+    "timestamp": "2026-04-18T02:49:43.320Z",
+    "language": "python",
+    "summary": "Thin down the route handler; Validate inputs before persistence work; Protect external operations with error handling",
+    "issueCount": 4,
+    "issues": [
+      {
+        "title": "Thin down the route handler",
+        "category": "architecture",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Keep API route handlers thin",
+          "Separate controller, service, and repository responsibilities",
+          "Hindsight memory"
+        ]
+      },
+      {
+        "title": "Validate inputs before persistence work",
+        "category": "validation",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "Validate inputs before DB operations"
+        ]
+      },
+      {
+        "title": "Protect external operations with error handling",
+        "category": "reliability",
+        "severity": "high",
+        "status": "open",
+        "keywords": [
+          "reliability"
+        ]
+      },
+      {
+        "title": "Split long function `create_order` into smaller steps",
+        "category": "maintainability",
+        "severity": "medium",
+        "status": "open",
+        "keywords": [
+          "maintainability"
+        ]
+      }
+    ],
+    "scores": {
+      "overall": 72,
+      "maintainability": 80,
+      "architectureAlignment": 66,
+      "reliability": 58,
+      "readability": 100,
+      "teamAlignment": 65
+    }
+  }
+]

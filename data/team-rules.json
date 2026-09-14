@@ -1,0 +1,62 @@
+[
+  {
+    "id": "rule-thin-routes",
+    "kind": "team_rule",
+    "title": "Keep API route handlers thin",
+    "content": "Route handlers should parse inputs, delegate to services, and format responses. Avoid embedding business rules or persistence logic directly in the route.",
+    "language": "python",
+    "category": "architecture",
+    "keywords": ["route", "service", "thin handlers", "architecture"],
+    "confidence": 0.96,
+    "source": "team-playbook",
+    "timesUsed": 12,
+    "metadata": {
+      "layer": "api"
+    }
+  },
+  {
+    "id": "rule-validate-before-db",
+    "kind": "team_rule",
+    "title": "Validate inputs before DB operations",
+    "content": "Perform presence, type, and business-shape validation before any repository or database operation so malformed requests fail fast.",
+    "language": "python",
+    "category": "validation",
+    "keywords": ["validation", "db", "request", "payload"],
+    "confidence": 0.95,
+    "source": "incident-retrospective",
+    "timesUsed": 14,
+    "metadata": {
+      "impact": "reduced bad writes"
+    }
+  },
+  {
+    "id": "rule-structured-logging",
+    "kind": "architecture_preference",
+    "title": "Use structured logging on failures",
+    "content": "When exceptions happen, log structured context like request id, user id, and operation name instead of raw print statements.",
+    "language": "python",
+    "category": "logging",
+    "keywords": ["logging", "structured", "exception"],
+    "confidence": 0.92,
+    "source": "platform-guidelines",
+    "timesUsed": 10,
+    "metadata": {
+      "preferredLibrary": "logging"
+    }
+  },
+  {
+    "id": "rule-service-separation",
+    "kind": "architecture_preference",
+    "title": "Separate controller, service, and repository responsibilities",
+    "content": "Business rules belong in services, data access belongs in repositories, and transport-layer code should stay focused on request and response handling.",
+    "language": "python",
+    "category": "architecture",
+    "keywords": ["controller", "service", "repository", "separation"],
+    "confidence": 0.97,
+    "source": "architecture-review",
+    "timesUsed": 13,
+    "metadata": {
+      "pattern": "controller-service-repository"
+    }
+  }
+]

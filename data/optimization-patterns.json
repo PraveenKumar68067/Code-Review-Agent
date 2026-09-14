@@ -1,0 +1,29 @@
+[
+  {
+    "id": "opt-extract-helper",
+    "pattern": "Extract shared helper for duplicated validation",
+    "status": "accepted",
+    "languages": ["python"],
+    "categories": ["maintainability", "validation"],
+    "evidence": "Reduced repeated validation code across two handlers.",
+    "reuseConfidence": 0.93
+  },
+  {
+    "id": "opt-service-layer",
+    "pattern": "Move business rules into service class or function",
+    "status": "accepted",
+    "languages": ["python"],
+    "categories": ["architecture"],
+    "evidence": "Improved testability and route readability in prior review.",
+    "reuseConfidence": 0.95
+  },
+  {
+    "id": "opt-generic-rename",
+    "pattern": "Suggest broad variable rename without contextual examples",
+    "status": "rejected",
+    "languages": ["python"],
+    "categories": ["naming"],
+    "evidence": "Team marked this as too generic to be useful.",
+    "reuseConfidence": 0.18
+  }
+]
